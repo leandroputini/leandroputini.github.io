@@ -1,6 +1,7 @@
 body{
     background-image: url(https://i1.wp.com/www.aviacaoemercado.com.br/wp-content/uploads/2018/01/ViewImage-8.jpg?fit=2121%2C1414);
-
+    
+    background-size: 100% auto;
 }
 section{
     text-align: center;
@@ -16,6 +17,7 @@ h2{
     font-family: 'Work Sans', sans-serif;
     font-size: 1.5em;
 }
+
 .caixa{
     background-color: rgba(255, 255, 255, 0.35);
 
