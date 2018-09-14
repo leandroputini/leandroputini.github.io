@@ -1,6 +1,6 @@
 body{
     background-image: url(https://i1.wp.com/www.aviacaoemercado.com.br/wp-content/uploads/2018/01/ViewImage-8.jpg?fit=2121%2C1414);
-    background-size: 100% auto;
+    background-size: auto auto;
     -webkit-background-size: auto auto;
 }
 section{
