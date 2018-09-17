@@ -75,7 +75,7 @@ h2{
 }
 .planta-caixa{
     width: 40em;
-    height: 25em;;
+    height: 25em;
     background-color: rgba(255, 255, 255, 0.75);
     padding: 5em;
     margin: 15em;
@@ -85,7 +85,4 @@ h2{
     width: 35em;
     height: auto;
 }
-.alert{
-    position: absolute;
-    
-}
+
