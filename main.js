@@ -7,9 +7,3 @@
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-messaging.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-functions.js"></script>
-
-
-
-
-
-
