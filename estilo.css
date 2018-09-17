@@ -1,7 +1,7 @@
 body{
     background-image: url(https://i1.wp.com/www.aviacaoemercado.com.br/wp-content/uploads/2018/01/ViewImage-8.jpg?fit=2121%2C1414);
-    background-size: 100% auto;
-    -webkit-background-size: 100% auto;
+    background-size: auto auto;
+    -webkit-background-size: auto auto;
 }
 section{
     text-align: center;
@@ -74,6 +74,7 @@ h2{
     padding-left: 3.5em;
     padding-right: 3.5em;
 }
+<<<<<<< HEAD
 .planta-caixa{
     width: 40em;
     height: 25em;;
@@ -90,3 +91,5 @@ h2{
     position: absolute;
     
 }
+=======
+>>>>>>> f4cf070c5f964960833489a6207debe607cceb94
