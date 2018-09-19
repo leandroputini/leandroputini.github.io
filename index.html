@@ -7,23 +7,9 @@
     <title>SS_IoT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
-    <script src="main.js"></script>
+    
 </head>
-<body>
-    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
-    <script>
-        //Initialize Firebase
-        var config = {
-        apiKey: "AIzaSyBHWDqK49yEyfslsY5Q08bEC_P637lOmqQ",
-        authDomain: "ss-iot-2c18a.firebaseapp.com",
-        databaseURL: "https://ss-iot-2c18a.firebaseio.com",
-        projectId: "ss-iot-2c18a",
-        storageBucket: "ss-iot-2c18a.appspot.com",
-        messagingSenderId: "626067097243"
-        };
-        firebase.initializeApp(config);
-    </script>
-
+<body>   
     <section>
         <h1>
            <b>Sistema de Segurança Residêncial com Internet das Coisas</b>
@@ -33,6 +19,7 @@
             <article class="caixa">
                 <h2>Sensor 1</h2>
                 <br>
+                <h3 id="sensor1status"></h3>
                 <input type="submit" value="Ligar" class="butoes">
                 <input type="submit" value="Desligar" class="butoes">
             </article>
@@ -62,9 +49,12 @@
         <br>
         <div class="planta-caixa">
             <img src="sources/400px-HouseFlrPlan.svg.png" alt="planta" class="planta" style="position: absolute; z-index: 1;">
-            <img src="sources/sensor1Alert.png" alt="sensor1Alert" class="planta">
+           <!-- <img src="sources/sensor1Alert.png" alt="sensor1Alert" class="planta"> -->
             
         </div>
     </section>
+
+    <script src="main.js"></script>
+   
 </body>
 </html>
