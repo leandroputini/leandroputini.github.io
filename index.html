@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
     <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase-firestore.js"></script>
 </head>
 <body>   
     <section>
@@ -22,22 +22,22 @@
             <article class="caixa">
                 <h2>Sensor 1</h2>
                 <h3 id="sensor1status"></h3>
-                <input type="submit" value="Ligar" class="butoes">
-                <input type="submit" value="Desligar" class="butoes">
+                <input onclick="ligarSensor1()" type="submit" value="Ligar" class="butoes">
+                <input onclick="desligarSensor1()" type="submit" value="Desligar" class="butoes">
             </article>
 
             <article class="caixa">
                 <h2>Sensor 2</h2>
-                <br>
-                <input type="submit" value="Ligar" class="butoes">
-                <input type="submit" value="Desligar" class="butoes">
+                <h3 id="sensor2status"></h3>
+                <input onclick="ligarSensor2()" type="submit" value="Ligar" class="butoes">
+                <input onclick="desligarSensor2()" type="submit" value="Desligar" class="butoes">
             </article>
 
             <article class="caixa">
                 <h2>Sensor 3</h2>
-                <br>
-                <input type="submit" value="Ligar" class="butoes">
-                <input type="submit" value="Desligar" class="butoes">
+                <h3 id="sensor3status"></h3>
+                <input onclick="ligarSensor3()" type="submit" value="Ligar" class="butoes">
+                <input onclick="desligarSensor3()" type="submit" value="Desligar" class="butoes">
             </article>
 
             <article class="caixa">

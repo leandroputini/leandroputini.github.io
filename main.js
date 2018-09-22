@@ -11,7 +11,9 @@ var config = {
   
   firebase.initializeApp(config);
 
-var db = firebase.firestore();
+const db = firebase.firestore();
+const settings = {/* your settings... */ timestampsInSnapshots: true};
+db.settings(settings);
 
 
 const dbRef = db.collection('sensores').doc('sensoresStatus');
@@ -24,14 +26,59 @@ const teste = document.getElementById('teste');
 /*var sensor1status = dbRef.onSnapshot(doc.data().sensor1status);
 console.log(sensor1status);*/
 
-var res = "";
 
+//***** SENSOR 1 *****//
+dbRef.onSnapshot(function(doc){
+  var res = (doc.data().sensor1status);
+  console.log(res);
+  if (res == true) {
+    document.getElementById('sensor1status').innerText = "Status: Ligado";
+    console.log("Status1: Ligado");
+  }else{
+    document.getElementById('sensor1status').innerText = "Status: Desigado";
+    console.log("Status1: Desigado");
+  }
+});
+function ligarSensor1(){
+  
+}
+
+
+//***** SENSOR 2 *****//
+dbRef.onSnapshot(function(doc){
+  var res = (doc.data().sensor2status);
+  console.log(res);
+  if (res == true) {
+    document.getElementById('sensor2status').innerText = "Status: Ligado";
+    console.log("Status2: Ligado");
+  }else{
+    document.getElementById('sensor2status').innerText = "Status: Desigado";
+    console.log("Status2: Desigado");
+  }
+});
+
+//***** SENSOR 3 *****//
+dbRef.onSnapshot(function(doc){
+  var res = (doc.data().sensor3status);
+  console.log(res);
+  if (res == true) {
+    document.getElementById('sensor3status').innerText = "Status: Ligado";
+    console.log("Status3: Ligado");
+  }else{
+    document.getElementById('sensor3status').innerText = "Status: Desigado";
+    console.log("Status3: Desigado");
+  }
+});
+
+
+
+/*
 //Consultando o sensor1status
 dbRef.onSnapshot(function(doc) {
     if (doc.exists) {
         //console.log('sensor1status: '+doc.data().sensor1status);  
         res = ('sensor1status: '+doc.data().sensor1status);
-        console.log("teste log: "+res);
+        //console.log("teste log: "+res);
         
     } else {
         // doc.data() will be undefined in this case
@@ -39,7 +86,7 @@ dbRef.onSnapshot(function(doc) {
     } 
   });
 
-/*
+
 //Consultando o sensor2status
 dbRef.onSnapshot(function(doc) {
   if (doc.exists) {
