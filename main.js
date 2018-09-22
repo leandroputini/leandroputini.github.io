@@ -40,7 +40,14 @@ dbRef.onSnapshot(function(doc){
   }
 });
 function ligarSensor1(){
-  
+  dbRef.update({
+    sensor1status: true
+  })
+}
+function desligarSensor1(){
+  dbRef.update({
+    sensor1status: false
+  })
 }
 
 
@@ -56,6 +63,16 @@ dbRef.onSnapshot(function(doc){
     console.log("Status2: Desigado");
   }
 });
+function ligarSensor2(){
+  dbRef.update({
+    sensor2status: true
+  })
+}
+function desligarSensor2(){
+  dbRef.update({
+    sensor2status: false
+  })
+}
 
 //***** SENSOR 3 *****//
 dbRef.onSnapshot(function(doc){
@@ -69,7 +86,16 @@ dbRef.onSnapshot(function(doc){
     console.log("Status3: Desigado");
   }
 });
-
+function ligarSensor3(){
+  dbRef.update({
+    sensor3status: true
+  })
+}
+function desligarSensor3(){
+  dbRef.update({
+    sensor3status: false
+  })
+}
 
 
 /*
