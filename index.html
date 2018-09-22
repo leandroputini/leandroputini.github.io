@@ -7,10 +7,13 @@
     <title>SS_IoT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
-    
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
 </head>
 <body>   
     <section>
+        <h1 id="teste"></h1>
         <h1>
            <b>Sistema de Segurança Residêncial com Internet das Coisas</b>
         </h1>
@@ -18,7 +21,6 @@
         <div class="allboxes">
             <article class="caixa">
                 <h2>Sensor 1</h2>
-                <br>
                 <h3 id="sensor1status"></h3>
                 <input type="submit" value="Ligar" class="butoes">
                 <input type="submit" value="Desligar" class="butoes">
@@ -49,12 +51,10 @@
         <br>
         <div class="planta-caixa">
             <img src="sources/400px-HouseFlrPlan.svg.png" alt="planta" class="planta" style="position: absolute; z-index: 1;">
-           <!-- <img src="sources/sensor1Alert.png" alt="sensor1Alert" class="planta"> -->
+            <img src="sources/sensor1Alert.png" alt="sensor1Alert" class="planta">
             
         </div>
     </section>
-
     <script src="main.js"></script>
-   
 </body>
 </html>
