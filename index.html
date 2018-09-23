@@ -22,39 +22,56 @@
             <article class="caixa">
                 <h2>Sensor 1</h2>
                 <h3 id="sensor1status"></h3>
-                <input onclick="ligarSensor1()" type="submit" value="Ligar" class="butoes">
-                <input onclick="desligarSensor1()" type="submit" value="Desligar" class="butoes">
+                <input onclick="ligarSensor1()" type="button" value="Ligar" class="butoes">
+                <input onclick="desligarSensor1()" type="button" value="Desligar" class="butoes">
+                <div style="margin:0.5em;">
+                    <input onclick="ligarAlert1()" type="button" value="Testar" class="butoes">
+                    <input onclick="desligarAlert1()" type="button" value="Desarmar" class="butoes">
+                </div>
             </article>
 
             <article class="caixa">
                 <h2>Sensor 2</h2>
                 <h3 id="sensor2status"></h3>
-                <input onclick="ligarSensor2()" type="submit" value="Ligar" class="butoes">
-                <input onclick="desligarSensor2()" type="submit" value="Desligar" class="butoes">
+                <input onclick="ligarSensor2()" type="button" value="Ligar" class="butoes">
+                <input onclick="desligarSensor2()" type="button" value="Desligar" class="butoes">
+                <div style="margin:0.5em;">
+                    <input onclick="ligarAlert2()" type="button" value="Testar" class="butoes">
+                    <input onclick="desligarAlert2()" type="button" value="Desarmar" class="butoes">
+                </div>
             </article>
 
             <article class="caixa">
                 <h2>Sensor 3</h2>
                 <h3 id="sensor3status"></h3>
-                <input onclick="ligarSensor3()" type="submit" value="Ligar" class="butoes">
-                <input onclick="desligarSensor3()" type="submit" value="Desligar" class="butoes">
+                <input onclick="ligarSensor3()" type="button" value="Ligar" class="butoes">
+                <input onclick="desligarSensor3()" type="button" value="Desligar" class="butoes">
+                <div style="margin:0.5em;">
+                    <input onclick="ligarAlert3()" type="button" value="Testar" class="butoes">
+                    <input onclick="desligarAlert3()" type="button" value="Desarmar" class="butoes">
+                </div>
             </article>
 
             <article class="caixa">
                 <h2>Alarme</h2>
-                <br>
-                <input type="submit" value="Ligar" class="butoes">
-                <input type="submit" value="Desligar" class="butoes">
-                <input type="submit" value="Pane" class="butoes">
+                <h3 id="alarmeStatus"></h3>
+                <input onclick="ligarAlarme()" type="button" value="Ligar" class="butoes">
+                <input onclick="desligarAlarme()" type="button" value="Desligar" class="butoes">
+                <div style="margin:0.5em;">
+                    <input onclick="pane()" type="button" value="Testar" class="butoes">
+                    <input onclick="despane()" type="button" value="Desarmar" class="butoes">
+                </div>
             </article>
         </div>
-        <br>
-        <div class="planta-caixa">
-            <img src="sources/400px-HouseFlrPlan.svg.png" alt="planta" class="planta" style="position: absolute; z-index: 1;">
-            <img src="sources/sensor1Alert.png" alt="sensor1Alert" class="planta">
-            
-        </div>
+        <br>        
     </section>
+    <div class="planta-caixa">
+        <img src="sources/400px-HouseFlrPlan.svg.png" alt="planta" class="planta" style="z-index: 1;">
+        <!--<img src="sources/sensor1Alert.png" alt="sensor1Alert" class="planta" >-->
+        <div id="sensor1alert"></div>
+        <div id="sensor2alert"></div>
+        <div id="sensor3alert"></div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

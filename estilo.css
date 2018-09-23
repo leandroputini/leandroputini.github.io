@@ -23,7 +23,7 @@ h2{
 
     position: relative;
     float: left; 
-    padding: 2em;
+    padding: 1em;
     margin: 1em;
 
     box-shadow: 10px 10px 10px #27408B; /*Cria sombra da caixa*/
@@ -78,11 +78,12 @@ h2{
     height: 25em;
     background-color: rgba(255, 255, 255, 0.75);
     padding: 5em;
-    margin: 15em;
+    margin: 15em;    
     
 }
 .planta{
     width: 35em;
     height: auto;
+    position: absolute;
 }
 
