@@ -78,7 +78,9 @@ h2{
     height: 25em;
     background-color: rgba(255, 255, 255, 0.75);
     padding: 5em;
-    margin: 15em;    
+    margin: 15em;  
+    margin-top: 20em;
+    border-radius: 5em;
     
 }
 .planta{
