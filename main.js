@@ -29,26 +29,35 @@ console.log(sensor1status);*/
 //***** SENSOR 1 *****//
 dbRef.onSnapshot(function(doc){
   var res = (doc.data().sensor1status);
+  
   if (res == true) {
     document.getElementById('sensor1status').innerText = "Status: Ligado";
-    
+  
   }else{
     document.getElementById('sensor1status').innerText = "Status: Desligado";
   }
 });
 dbRef.onSnapshot(function(doc){
   var res = (doc.data().sensor1alert);
-  if (res == true) {
-    document.getElementById('sensor1alert').innerHTML = '<img src="sources/sensor1Alert.png" alt="sensor1Alert" class="planta" >';
+  if (res == true) {     
+    window.anim1 = setInterval(function(){
+      document.getElementById('sensor1alert').innerHTML = '<svg height="100" width="100">'+
+      '<polyline points="50,1 1,99 99,99 50,1" style="fill:none;stroke:brown;stroke-width:3"></polyline>'+
+      '<circle cx="50" cy="80" r="5" fill="none" stroke="brown" stroke-width="3"></circle>'+
+      '<polyline points="50,70 40,40 45,30 55,30 60,40 50,70" style="fill:none;stroke:brown;stroke-width:3"></polyline>'+
+      '</svg>';
+      setTimeout(function(){document.getElementById('sensor1alert').innerHTML = '';}, 500);
+      //console.log("Teste interval")
+    }, 1000);
+    
     document.getElementById('sensor1status').innerText = "Status: ALERTA!";
+    
   }else{
+    window.clearInterval(window.anim1);
     document.getElementById('sensor1alert').innerHTML = '';
+    
   }
 });
-var ress1t = dbRef.get({
-
-})
-console.log(ress1t); 
 
 function ligarSensor1(){
   dbRef.update({
@@ -101,12 +110,24 @@ dbRef.onSnapshot(function(doc){
 });
 dbRef.onSnapshot(function(doc){
   var res = (doc.data().sensor2alert);
-  if (res == true) {
-    document.getElementById('sensor2alert').innerHTML = '<img src="sources/sensor2Alert.png" alt="sensor2Alert" class="planta" >';
+  if (res == true) {     
+    window.anim2 = setInterval(function(){
+      document.getElementById('sensor2alert').innerHTML = '<svg height="100" width="100">'+
+      '<polyline points="50,1 1,99 99,99 50,1" style="fill:none;stroke:brown;stroke-width:3"></polyline>'+
+      '<circle cx="50" cy="80" r="5" fill="none" stroke="brown" stroke-width="3"></circle>'+
+      '<polyline points="50,70 40,40 45,30 55,30 60,40 50,70" style="fill:none;stroke:brown;stroke-width:3"></polyline>'+
+      '</svg>';
+      setTimeout(function(){document.getElementById('sensor2alert').innerHTML = '';}, 500);
+      //console.log("Teste interval")
+    }, 1000);
+    
     document.getElementById('sensor2status').innerText = "Status: ALERTA!";
+    
   }else{
+    window.clearInterval(window.anim2);
     document.getElementById('sensor2alert').innerHTML = '';
-    }
+    
+  }
 });
 function ligarSensor2(){
   dbRef.update({
@@ -157,11 +178,23 @@ dbRef.onSnapshot(function(doc){
 });
 dbRef.onSnapshot(function(doc){
   var res = (doc.data().sensor3alert);
-  if (res == true) {
-    document.getElementById('sensor3alert').innerHTML = '<img src="sources/sensor3Alert.png" alt="sensor3Alert" class="planta" >';
+  if (res == true) {     
+    window.anim3 = setInterval(function(){
+      document.getElementById('sensor3alert').innerHTML = '<svg height="100" width="100">'+
+      '<polyline points="50,1 1,99 99,99 50,1" style="fill:none;stroke:brown;stroke-width:3"></polyline>'+
+      '<circle cx="50" cy="80" r="5" fill="none" stroke="brown" stroke-width="3"></circle>'+
+      '<polyline points="50,70 40,40 45,30 55,30 60,40 50,70" style="fill:none;stroke:brown;stroke-width:3"></polyline>'+
+      '</svg>';
+      setTimeout(function(){document.getElementById('sensor3alert').innerHTML = '';}, 500);
+      //console.log("Teste interval")
+    }, 1000);
+    
     document.getElementById('sensor3status').innerText = "Status: ALERTA!";
+    
   }else{
+    window.clearInterval(window.anim3);
     document.getElementById('sensor3alert').innerHTML = '';
+    
   }
 });
 function ligarSensor3(){

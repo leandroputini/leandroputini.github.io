@@ -88,4 +88,18 @@ h2{
     height: auto;
     position: absolute;
 }
-
+.s1{
+    top: 10em;
+    left: 4.5em;
+    position: relative;
+}
+.s2{
+    top: 14em;
+    left: 26em;
+    position: relative;
+}
+.s3{
+    top: 3em;
+    left: 18em;
+    position: relative;
+}
