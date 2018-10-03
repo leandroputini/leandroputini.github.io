@@ -10,7 +10,7 @@ section{
 h1{
     font-family: 'Work Sans', sans-serif;
     font-size: 2em;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
 }
 h2{
     
@@ -19,7 +19,7 @@ h2{
 }
 
 .caixa{
-    background-color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.75);
 
     position: relative;
     float: left; 
