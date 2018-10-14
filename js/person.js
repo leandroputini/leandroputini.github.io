@@ -48,9 +48,11 @@ dbRef.onSnapshot(function(doc){
     var a1 = (doc.data().sensor1alert);
     if (a1 == true) {     
         window.anim1 = setInterval(function(){
-          document.getElementById('a1').innerHTML = '<polyline points="50,1 1,99 99,99 50,1" style="fill:none;stroke:brown;stroke-width:3"></polyline>'+
+          document.getElementById('a1').innerHTML = '<svg width="6.25rem" height="6.25rem">' +
+          '<polyline points="50,1 1,99 99,99 50,1" style="fill:none;stroke:brown;stroke-width:3"></polyline>'+
           '<circle cx="50" cy="80" r="5" fill="none" stroke="brown" stroke-width="3"></circle>'+
-          '<polyline points="50,70 40,40 45,30 55,30 60,40 50,70" style="fill:none;stroke:brown;stroke-width:3"></polyline>';
+          '<polyline points="50,70 40,40 45,30 55,30 60,40 50,70" style="fill:none;stroke:brown;stroke-width:3"></polyline>' +
+          '</svg>';
           setTimeout(function(){document.getElementById('a1').innerHTML = '';}, 500);
         }, 1000);
         
@@ -64,9 +66,11 @@ dbRef.onSnapshot(function(doc){
     var a2 = (doc.data().sensor2alert);
     if (a2 == true) {     
         window.anim2 = setInterval(function(){
-          document.getElementById('a2').innerHTML = '<polyline points="50,1 1,99 99,99 50,1" style="fill:none;stroke:brown;stroke-width:3"></polyline>'+
+          document.getElementById('a2').innerHTML = '<svg width="6.25rem" height="6.25rem">' +
+          '<polyline points="50,1 1,99 99,99 50,1" style="fill:none;stroke:brown;stroke-width:3"></polyline>'+
           '<circle cx="50" cy="80" r="5" fill="none" stroke="brown" stroke-width="3"></circle>'+
-          '<polyline points="50,70 40,40 45,30 55,30 60,40 50,70" style="fill:none;stroke:brown;stroke-width:3"></polyline>';
+          '<polyline points="50,70 40,40 45,30 55,30 60,40 50,70" style="fill:none;stroke:brown;stroke-width:3"></polyline>' +
+          '</svg>';
           setTimeout(function(){document.getElementById('a2').innerHTML = '';}, 500);
         }, 1000);
         
@@ -80,9 +84,11 @@ dbRef.onSnapshot(function(doc){
     var a3 = (doc.data().sensor3alert);
     if (a3 == true) {     
         window.anim3 = setInterval(function(){
-          document.getElementById('a3').innerHTML = '<polyline points="50,1 1,99 99,99 50,1" style="fill:none;stroke:brown;stroke-width:3"></polyline>'+
+          document.getElementById('a3').innerHTML = '<svg width="6.25rem" height="6.25rem">' +
+          '<polyline points="50,1 1,99 99,99 50,1" style="fill:none;stroke:brown;stroke-width:3"></polyline>'+
           '<circle cx="50" cy="80" r="5" fill="none" stroke="brown" stroke-width="3"></circle>'+
-          '<polyline points="50,70 40,40 45,30 55,30 60,40 50,70" style="fill:none;stroke:brown;stroke-width:3"></polyline>';
+          '<polyline points="50,70 40,40 45,30 55,30 60,40 50,70" style="fill:none;stroke:brown;stroke-width:3"></polyline>' +
+          '</svg>';
           setTimeout(function(){document.getElementById('a3').innerHTML = '';}, 500);
         }, 1000);
         
