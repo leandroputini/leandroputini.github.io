@@ -52,7 +52,6 @@ dbRef.onSnapshot(function(doc){
           setTimeout(function(){document.getElementById('a1').innerHTML = '';}, 500);
         }, 1000);
         
-        document.getElementById('sensor1status').innerText = "Status: ALERTA!";
         
     }else{
     window.clearInterval(window.anim1);
